@@ -1,32 +1,34 @@
-# Solstice — Classic
+# Solstice — Reef
 
 The **authentic Common Desktop Environment "Default" palette** as an Omarchy
-theme: teal chrome, salmon active borders, tan window bodies and a light-slate
-canvas — the look every CDE workstation shipped with. Every chrome color is
-taken slot-exact from CDE's own `Default.dp` palette file and pixel-verified
-against the [LinuxBuild wiki screenshots](https://sourceforge.net/p/cdesktopenv/wiki/LinuxBuild/).
+theme: teal chrome like reef water, salmon accents like coral, tan window
+bodies and a light-slate canvas — the look every CDE workstation shipped
+with. Every chrome color is taken slot-exact from CDE's own `Default.dp`
+palette file and pixel-verified against the
+[LinuxBuild wiki screenshots](https://sourceforge.net/p/cdesktopenv/wiki/LinuxBuild/).
 
-Third member of the Solstice family alongside
-[Daylight](https://github.com/circumspace/omarchy-solstice-daylight-theme) and
-[Nightwatch](https://github.com/circumspace/omarchy-solstice-nightwatch-theme).
+Fourth member of the Solstice family alongside
+[Daylight](https://github.com/circumspace/omarchy-solstice-daylight-theme),
+[Nightwatch](https://github.com/circumspace/omarchy-solstice-nightwatch-theme)
+and [Crimson](https://github.com/circumspace/omarchy-solstice-crimson-theme).
 
 ## Preview
 
-![Solstice Classic](screenshots/classic.png)
+![Solstice Reef](screenshots/reef.png)
 
 ## Install
 
 ```bash
-omarchy theme install https://github.com/circumspace/omarchy-solstice-classic-theme
+omarchy theme install https://git.circum.space/circumspace/omarchy-solstice-reef-theme
 ```
 
-Then select **Solstice Classic** from the Omarchy theme picker.
+Then select **Solstice Reef** from the Omarchy theme picker.
 
 Or manually:
 
 ```bash
-git clone https://github.com/circumspace/omarchy-solstice-classic-theme \
-  ~/.config/omarchy/themes/solstice-classic
+git clone https://git.circum.space/circumspace/omarchy-solstice-reef-theme \
+  ~/.config/omarchy/themes/solstice-reef
 ```
 
 ## Palette

@@ -1,4 +1,4 @@
--- Solstice Classic — Neovim theme for Omarchy (aether.nvim v3).
+-- Solstice Reef — Neovim theme for Omarchy (aether.nvim v3).
 -- The authentic CDE "Default" palette: light-slate canvas, teal chrome,
 -- salmon (#EDA870) selection. Mirrors the colors omarchy-theme-set-templates
 -- generates from colors.toml for repo installs, so manual (non-git) installs

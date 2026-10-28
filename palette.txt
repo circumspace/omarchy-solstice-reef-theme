@@ -1,4 +1,4 @@
-# Solstice Classic — palette reference
+# Solstice Reef — palette reference
 # Derived from the CDE "Default" palette (cde/programs/palettes/Default.dp,
 # cdesktopenv/cde) and pixel-verified against the SourceForge LinuxBuild
 # wiki screenshots (CDE-3.png … CDE-8.png). All chrome colors are exact.

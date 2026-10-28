@@ -1,4 +1,4 @@
-/* Solstice Classic — GTK3 CDE Default colors: teal chrome, tan window
+/* Solstice Reef — GTK3 CDE Default colors: teal chrome, tan window
    bodies, light-slate content, salmon selection.
    NOTE: !important is NOT supported by GTK3's CSS parser. */
 @define-color theme_bg_color #4992A7;
