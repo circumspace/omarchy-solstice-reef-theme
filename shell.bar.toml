@@ -1,10 +1,13 @@
-# Bar — the CDE Front Panel: teal chrome, light text, salmon alerts.
+# Bar — the CDE Front Panel: bright teal chrome with dark ink text, like
+# CDE's teal window chrome and front-panel labels (black on teal, 5.9:1).
+# The active/urgent accent flips to white so the active workspace and alert
+# modules stand out from the ink base text.
 # Section override for omarchy's generated shell.toml (theme-shipped files
 # win over templates; only this section is replaced).
 background       = "#4992A7"
 background-alpha = 1.0
-text             = "#FFFFFF"
-active           = "#EDA870"
+text             = "#000000"
+active           = "#FFFFFF"
 scale-with-font  = true
 size-horizontal  = 26
 size-vertical    = 28
