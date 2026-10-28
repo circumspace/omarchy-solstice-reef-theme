@@ -1,0 +1,66 @@
+mode = "light"
+
+# Solstice Classic — the authentic Common Desktop Environment "Default"
+# palette (cde/programs/palettes/Default.dp in cdesktopenv/cde), pixel-
+# cross-checked against the SourceForge LinuxBuild wiki screenshots
+# (CDE-3.png … CDE-8.png). Every chrome color below is exact.
+#
+# Salmon   #EDA870  active titlebar/border, selection, focus, hover (slot 1)
+# Grey     #999999  inactive window borders (slot 2)
+# Slate    #8998AA  workspace 1/3 buttons, secondary chrome (slot 3)
+# D.Slate  #686F82  workspace 2/4 buttons, troughs, recessed (slot 4)
+# Tan      #C6B2A8  window bodies, icon areas (slot 5)
+# Teal     #4992A7  menubars, front panel, window chrome (slot 6)
+# Rose     #B7878D  secondary accent (slot 7)
+# Steel    #93ABBF  light steel blue (slot 8)
+#
+# Terminal templates bind to 'background', which carries the light-slate
+# canvas — the CDE default desktop backdrop color. Desktop chrome stays via
+# hand-pinned gtk3/gtk4.css (teal chrome on tan window bodies) and the
+# wallpaper base. color0/color7 are pinned to background/foreground by the
+# resolver, so the inverted light-theme ANSI (black = canvas, white = ink)
+# is intentional.
+
+# ── Structure ────────────────────────────────────────────────────────────────
+accent               = "#EDA870"
+selection            = "#EDA870"
+selection_background = "#EDA870"
+selection_foreground = "#000000"
+
+background           = "#CAD1D9"
+dark_background      = "#686F82"
+darker_background    = "#4A5866"
+lighter_background   = "#ADCED7"
+
+foreground           = "#000000"
+dark_foreground      = "#5B6570"
+light_foreground     = "#4A545E"
+
+# Semantic colors without a color0..color15 slot.
+orange               = "#B26A28"   # battery/low indicators; not yellow
+brown                = "#7D593B"
+
+# ── Hyprland borders ───────────────────────────────────────────────────────
+# Slot-exact CDE: salmon active frame, grey inactive frame.
+hyprland_active_border   = "#EDA870"
+hyprland_inactive_border = "#999999"
+
+# ── ANSI 16-color palette (canonical) ──────────────────────────────────────
+# Yellows/oranges are hue-preserved darkenings of the CDE salmon and amber,
+# meeting 4.5:1 (color1..color6, color9..color14) on the light-slate canvas.
+color0  = "#CAD1D9"   # black   (pinned to background/canvas by the resolver)
+color1  = "#A72A2F"   # red     (darkened from CDE icon red #CC3339)
+color2  = "#3B6248"   # green   (sage)
+color3  = "#6F5621"   # yellow  (darkened amber, hue preserved)
+color4  = "#435C72"   # blue    (darkened steel #93ABBF, hue preserved)
+color5  = "#7E4B52"   # magenta (darkened CDE rose #B7878D)
+color6  = "#30606E"   # cyan    (darkened CDE dark teal #3E7C8D)
+color7  = "#000000"   # white   (ink — foreground)
+color8  = "#4A545E"   # br black  (muted)
+color9  = "#A72A2F"   # br red
+color10 = "#3B6248"   # br green
+color11 = "#6F5621"   # br yellow
+color12 = "#3F5C76"   # br blue
+color13 = "#83464F"   # br magenta
+color14 = "#30606E"   # br cyan
+color15 = "#000000"   # br white  (bright foreground)

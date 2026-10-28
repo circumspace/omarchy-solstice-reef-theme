@@ -1,0 +1,76 @@
+/* Solstice Classic — GTK3 CDE Default colors: teal chrome, tan window
+   bodies, light-slate content, salmon selection.
+   NOTE: !important is NOT supported by GTK3's CSS parser. */
+@define-color theme_bg_color #4992A7;
+@define-color theme_fg_color #FFFFFF;
+@define-color theme_base_color #CAD1D9;
+@define-color theme_text_color #000000;
+@define-color theme_selected_bg_color #EDA870;
+@define-color theme_selected_fg_color #000000;
+@define-color theme_unfocused_bg_color #686F82;
+@define-color theme_unfocused_fg_color #FFFFFF;
+@define-color theme_unfocused_base_color #CAD1D9;
+@define-color theme_unfocused_text_color #000000;
+@define-color theme_unfocused_selected_bg_color #EDA870;
+@define-color theme_unfocused_selected_fg_color #000000;
+
+/* Chrome surfaces — CDE menubar/front-panel teal with light text */
+headerbar, toolbar, menubar, .titlebar {
+  background-color: #4992A7;
+  background-image: none;
+  color: #FFFFFF;
+}
+
+/* Window bodies — the CDE tan */
+window {
+  background-color: #C6B2A8;
+  background-image: none;
+  color: #000000;
+}
+
+/* Content / list surfaces — light-slate canvas so file managers agree
+   (content mirrors the terminal canvas). :selected wins below. */
+.view,
+textview, textview text,
+scrolledwindow viewport,
+list, list row,
+iconview,
+treeview, treeview.view {
+  background-color: @theme_base_color;
+  color: @theme_text_color;
+}
+
+sidebar, .sidebar, stacksidebar.sidebar,
+.sidebar list, .sidebar row {
+  background-color: #ADCED7;
+  color: #000000;
+}
+
+.gtkstyle-fallback:selected {
+  background-color: #EDA870;
+  color: #000000;
+}
+
+.view:selected, .view:selected:focus,
+iconview:selected, iconview:selected:focus,
+textview text:selected, textview text:selected:focus {
+  background-color: #EDA870;
+  color: #000000;
+}
+
+row:selected {
+  background-color: #EDA870;
+  color: #000000;
+}
+
+entry:selected, entry selection {
+  background-color: #EDA870;
+  color: #000000;
+}
+
+treeview.view:selected, treeview.view:selected:focus {
+  background-color: #EDA870;
+  color: #000000;
+}
+
+* { border-radius: 0; }
