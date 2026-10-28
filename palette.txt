@@ -8,7 +8,7 @@ chrome           #4992A7   # menubars, front panel, window chrome (teal)
 canvas           #CAD1D9   # desktop backdrop, terminal / text-editor background
 surface          #C6B2A8   # window bodies, icon areas (tan)
 light_surface    #ADCED7   # raised surfaces, input fields (light teal)
-slate            #8998AA   # workspace 1/3, secondary chrome
+dark_teal        #3E7C8D   # inactive window frames (CDE screenshots)
 dark_slate       #686F82   # workspace 2/4, troughs, recessed surfaces
 deep             #4A5866   # recessed shadows
 grey             #999999   # secondary neutral (CDE slot 2)

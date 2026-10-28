@@ -38,7 +38,7 @@ git clone https://github.com/circumspace/omarchy-solstice-classic-theme \
 | Slate canvas (desktop, terminal) | `#CAD1D9` |
 | Tan (window bodies) | `#C6B2A8` |
 | Light teal (raised surfaces) | `#ADCED7` |
-| Grey (inactive border) | `#999999` |
+| Dark teal (inactive border) | `#3E7C8D` |
 | Rose (secondary accent) | `#B7878D` |
 | Ink (foreground) | `#000000` |
 
@@ -47,8 +47,9 @@ backdrop/input shades. Full 16-color ANSI palette in [`palette.txt`](palette.txt
 
 ## What's themed
 
-- **Hyprland** — salmon active border (`#EDA870`), grey inactive border
-  (`#999999`), both slot-exact CDE window-frame colors.
+- **Hyprland** — bright salmon active border (`#EDA870`, CDE slot-exact) over
+  a dark-teal inactive frame (`#3E7C8D`) — warm-vs-dark so focus is never
+  ambiguous.
 - **GTK 3 / GTK 4** — teal chrome over tan window bodies, light-slate content,
   salmon selection; sharp CDE corners. GTK loads user CSS once at startup, so
   **restart** GTK apps after switching *into or out of* this theme for colors
