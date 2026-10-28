@@ -1,58 +1,53 @@
--- Solstice Classic — Neovim theme for Omarchy (aether.nvim base16 engine).
+-- Solstice Classic — Neovim theme for Omarchy (aether.nvim v3).
 -- The authentic CDE "Default" palette: light-slate canvas, teal chrome,
--- salmon (#EDA870) selection. Follows Omarchy's stock `beta`-theme contract
--- so `theme-hotreload` can live-swap it: a real plugin spec + a STRING
--- opts.colorscheme resolvable by :colorscheme.
---
--- aether only sets Visual at load (from an internal `blue0`, not base02) and does
--- NOT re-clobber it, so we force the salmon selection groups synchronously after
--- applying the scheme and on every future ColorScheme event (Omarchy live reload).
+-- salmon (#EDA870) selection. Mirrors the colors omarchy-theme-set-templates
+-- generates from colors.toml for repo installs, so manual (non-git) installs
+-- render identically; aether v3 derives all surfaces — including a light
+-- cursorline — from the bg/lighter_bg pair.
 return {
 	{
 		"bjarneo/aether.nvim",
+		branch = "v3",
 		name = "aether",
 		priority = 1000,
 		opts = {
-			disable_italics = false,
 			colors = {
-				base00 = "#CAD1D9", -- bg: light-slate canvas
-				base01 = "#4992A7", -- chrome (teal)
-				base02 = "#ADCED7", -- cursorline (raised light teal)
-				base03 = "#5B6570", -- comments (muted slate)
-				base04 = "#5B6570", -- dark fg
-				base05 = "#000000", -- fg (ink)
-				base06 = "#2E3A44",
-				base07 = "#4A545E",
-				base08 = "#941E23", -- red
-				base09 = "#8A4811", -- orange (salmon family, 4.5:1+)
-				base0A = "#614919", -- yellow (dark amber, 5.5:1)
-				base0B = "#31543D", -- green (strings, sage)
-				base0C = "#26525F", -- cyan (dark teal)
-				base0D = "#384F63", -- blue (functions, dark steel)
-				base0E = "#6F3F45", -- magenta (storage/cursor-word, dark rose)
-				base0F = "#7D593B", -- brown
+				bg = "#CAD1D9", -- canvas: light-slate terminal background
+				dark_bg = "#686F82", -- dark slate (workspace 2/4)
+				darker_bg = "#4A5866", -- deep recessed
+				lighter_bg = "#ADCED7", -- raised surfaces, cursorline (light teal)
+
+				fg = "#000000", -- ink
+				dark_fg = "#5B6570", -- muted slate
+				light_fg = "#4A545E",
+				bright_fg = "#000000",
+				muted = "#4A545E",
+
+				red = "#941E23",
+				yellow = "#614919",
+				orange = "#8A4811",
+				green = "#31543D",
+				cyan = "#26525F",
+				blue = "#384F63",
+				magenta = "#6F3F45",
+				brown = "#7D593B",
+
+				bright_red = "#7B1216",
+				bright_yellow = "#4F3A0F",
+				bright_green = "#24442F",
+				bright_cyan = "#1B424D",
+				bright_blue = "#2A3F51",
+				bright_magenta = "#5D3036",
+
+				accent = "#EDA870", -- salmon
+				cursor = "#000000",
+				foreground = "#000000",
+				background = "#CAD1D9",
+				selection = "#EDA870",
+				selection_foreground = "#000000",
+				selection_background = "#EDA870",
 			},
 		},
-		config = function(_, opts)
-			local salmon, onsalmon = "#EDA870", "#000000"
-			local function force_selection()
-				local hi = vim.api.nvim_set_hl
-				hi(0, "Visual", { bg = salmon, fg = onsalmon })
-				hi(0, "VisualNOS", { bg = salmon, fg = onsalmon })
-				hi(0, "IncSearch", { bg = salmon, fg = onsalmon, bold = true })
-				hi(0, "MatchWord", { bg = salmon, fg = onsalmon })
-				hi(0, "MatchWordRef", { bg = salmon, fg = onsalmon })
-			end
-			local grp = vim.api.nvim_create_augroup("solstice_classic_selection", { clear = true })
-			vim.api.nvim_create_autocmd("ColorScheme", {
-				pattern = "aether",
-				group = grp,
-				callback = force_selection,
-			})
-			require("aether").setup(opts)
-			vim.cmd.colorscheme("aether")
-			force_selection()
-		end,
 	},
 	{
 		"LazyVim/LazyVim",
