@@ -41,10 +41,13 @@ orange               = "#B26A28"   # battery/low indicators; not yellow
 brown                = "#7D593B"
 
 # ── Hyprland borders ───────────────────────────────────────────────────────
-# Slot-exact CDE window frames: salmon active, teal chrome for everything
-# else — the screenshots' dominant menubar/window-chrome color.
+# CDE window frames, recalibrated for focus clarity: bright warm salmon
+# marks the active window; the inactive frame uses the screenshots' dark
+# teal #3E7C8D — same family as the chrome but clearly darker/cooler, so
+# focus never reads as ambiguous. Bright #4992A7 teal stays on the bar
+# and GTK chrome.
 hyprland_active_border   = "#EDA870"
-hyprland_inactive_border = "#4992A7"
+hyprland_inactive_border = "#3E7C8D"
 
 # ── ANSI 16-color palette (canonical) ──────────────────────────────────────
 # Hue-preserved recalibrations of the CDE chrome/salmon/rose/steel family,
