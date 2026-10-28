@@ -18,28 +18,28 @@ return {
 				lighter_bg = "#ADCED7", -- raised surfaces, cursorline (light teal)
 
 				fg = "#000000", -- ink
-				dark_fg = "#5B6570", -- muted slate
-				light_fg = "#4A545E",
+				dark_fg = "#414850", -- muted slate
+				light_fg = "#373E46",
 				bright_fg = "#000000",
-				muted = "#4A545E",
+				muted = "#373E46",
 
-				red = "#941E23",
-				yellow = "#614919",
-				orange = "#8A4811",
-				green = "#31543D",
-				cyan = "#26525F",
-				blue = "#384F63",
-				magenta = "#6F3F45",
-				brown = "#7D593B",
+				red = "#7A1418",
+				yellow = "#4E3A11",
+				orange = "#6F4219",
+				green = "#25442F",
+				cyan = "#1C424D",
+				blue = "#2B3F51",
+				magenta = "#5B3137",
+				brown = "#63472F",
 
-				bright_red = "#7B1216",
-				bright_yellow = "#4F3A0F",
-				bright_green = "#24442F",
-				bright_cyan = "#1B424D",
-				bright_blue = "#2A3F51",
-				bright_magenta = "#5D3036",
-
+				bright_red = "#5B0D10",
+				bright_yellow = "#392A0B",
+				bright_green = "#1A3122",
+				bright_cyan = "#143038",
+				bright_blue = "#1F2E3C",
+				bright_magenta = "#432327",
 				accent = "#EDA870", -- salmon
+
 				cursor = "#000000",
 				foreground = "#000000",
 				background = "#CAD1D9",

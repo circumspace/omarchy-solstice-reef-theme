@@ -8,32 +8,32 @@ chrome           #4992A7   # menubars, front panel, window chrome (teal)
 canvas           #CAD1D9   # desktop backdrop, terminal / text-editor background
 surface          #C6B2A8   # window bodies, icon areas (tan)
 light_surface    #ADCED7   # raised surfaces, input fields (light teal)
-dark_teal        #3E7C8D   # inactive window frames (CDE screenshots)
+dark_teal        #3E7C8D   # pressed/dark chrome accents (CDE screenshots)
 dark_slate       #686F82   # workspace 2/4, troughs, recessed surfaces
 deep             #4A5866   # recessed shadows
-grey             #999999   # secondary neutral (CDE slot 2)
+grey             #999999   # inactive window frames (CDE slot 2, subdued)
 rose             #B7878D   # secondary accent
 steel            #93ABBF   # light steel blue
 ink              #000000   # primary foreground
-muted            #4A545E   # secondary text
+muted            #373E46   # secondary text
 
-# ANSI 16 (terminal) — hue-preserved recalibrations: ~5.5:1 normals, ~7:1
-# brights on the canvas, above WCAG AA
+# ANSI 16 (terminal) — hue-preserved recalibrations, saturation +20-25%:
+# ~7:1 normals, ~9:1 brights on the canvas, well above WCAG AA
 color00  black    #CAD1D9
-color01  red      #941E23
-color02  green    #31543D
-color03  yellow   #614919
-color04  blue     #384F63
-color05  magenta  #6F3F45
-color06  cyan     #26525F
+color01  red      #7A1418
+color02  green    #25442F
+color03  yellow   #4E3A11
+color04  blue     #2B3F51
+color05  magenta  #5B3137
+color06  cyan     #1C424D
 color07  white    #000000
-color08  br black #4A545E
-color09  br red   #7B1216
-color10  br green #24442F
-color11  br yel   #4F3A0F
-color12  br blue  #2A3F51
-color13  br mag   #5D3036
-color14  br cyan  #1B424D
+color08  br black #373E46
+color09  br red   #5B0D10
+color10  br green #1A3122
+color11  br yel   #392A0B
+color12  br blue  #1F2E3C
+color13  br mag   #432327
+color14  br cyan  #143038
 color15  br white #000000
 
 # Regenerate wallpapers with:

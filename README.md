@@ -38,7 +38,7 @@ git clone https://github.com/circumspace/omarchy-solstice-classic-theme \
 | Slate canvas (desktop, terminal) | `#CAD1D9` |
 | Tan (window bodies) | `#C6B2A8` |
 | Light teal (raised surfaces) | `#ADCED7` |
-| Dark teal (inactive border) | `#3E7C8D` |
+| Grey (inactive border) | `#999999` |
 | Rose (secondary accent) | `#B7878D` |
 | Ink (foreground) | `#000000` |
 
@@ -47,15 +47,16 @@ backdrop/input shades. Full 16-color ANSI palette in [`palette.txt`](palette.txt
 
 ## What's themed
 
-- **Hyprland** — bright salmon active border (`#EDA870`, CDE slot-exact) over
-  a dark-teal inactive frame (`#3E7C8D`) — warm-vs-dark so focus is never
-  ambiguous.
+- **Hyprland** — bright salmon active border (`#EDA870`) over the CDE slot-2
+  grey inactive frame (`#999999`) — vivid warm vs subdued neutral, so focus
+  is always obvious.
 - **GTK 3 / GTK 4** — teal chrome over tan window bodies, light-slate content,
   salmon selection; sharp CDE corners. GTK loads user CSS once at startup, so
   **restart** GTK apps after switching *into or out of* this theme for colors
   to take.
 - **Terminal** — Ghostty / Alacritty / Kitty / foot palettes from `colors.toml`
-  on the light-slate canvas.
+  on the light-slate canvas; ANSI colors calibrated to ~7:1 (normals) and
+  ~9:1 (brights) on the canvas so colored text stays legible.
 - **Browser chrome** — `chromium.theme` sets the frame tint; apply with
   `omarchy theme set browser` (the policy write needs sudo). For full
   toolbar/tab colors, enable **Use GTK** in the browser's appearance settings —

@@ -33,39 +33,37 @@ darker_background    = "#4A5866"
 lighter_background   = "#ADCED7"
 
 foreground           = "#000000"
-dark_foreground      = "#5B6570"
-light_foreground     = "#4A545E"
+dark_foreground      = "#414850"
+light_foreground     = "#373E46"
 
 # Semantic colors without a color0..color15 slot.
-orange               = "#B26A28"   # battery/low indicators; not yellow
-brown                = "#7D593B"
+orange               = "#6F4219"   # battery/low indicators; not yellow
+brown                = "#63472F"
 
 # ── Hyprland borders ───────────────────────────────────────────────────────
-# CDE window frames, recalibrated for focus clarity: bright warm salmon
-# marks the active window; the inactive frame uses the screenshots' dark
-# teal #3E7C8D — same family as the chrome but clearly darker/cooler, so
-# focus never reads as ambiguous. Bright #4992A7 teal stays on the bar
-# and GTK chrome.
+# Slot-exact CDE window frames: vivid warm salmon marks the active window;
+# the inactive frame is the CDE slot-2 neutral grey — deliberately subdued
+# so focus never reads as ambiguous. Teal chrome lives on the bar and GTK.
 hyprland_active_border   = "#EDA870"
-hyprland_inactive_border = "#3E7C8D"
+hyprland_inactive_border = "#999999"
 
 # ── ANSI 16-color palette (canonical) ──────────────────────────────────────
-# Hue-preserved recalibrations of the CDE chrome/salmon/rose/steel family,
-# targeting ~5.5:1 (normals) and ~7:1 (brights) on the light-slate canvas —
-# comfortably above WCAG AA, so colored terminal text reads clearly.
+# Hue-preserved recalibrations of the CDE chrome/salmon/rose/steel family
+# with saturation raised ~20-25%, targeting ~7:1 (normals) and ~9:1 (brights)
+# on the light-slate canvas — colored text reads clearly at a glance.
 color0  = "#CAD1D9"   # black   (pinned to background/canvas by the resolver)
-color1  = "#941E23"   # red     (CDE icon red #CC3339, recalibrated 5.5:1)
-color2  = "#31543D"   # green   (sage, 5.5:1)
-color3  = "#614919"   # yellow  (amber #C4983B, recalibrated 5.5:1)
-color4  = "#384F63"   # blue    (steel #93ABBF, recalibrated 5.5:1)
-color5  = "#6F3F45"   # magenta (CDE rose #B7878D, recalibrated 5.5:1)
-color6  = "#26525F"   # cyan    (CDE dark teal #3E7C8D, recalibrated 5.5:1)
+color1  = "#7A1418"   # red     (CDE icon red #CC3339, recalibrated 7:1)
+color2  = "#25442F"   # green   (sage, 7:1)
+color3  = "#4E3A11"   # yellow  (amber #C4983B, recalibrated 7:1)
+color4  = "#2B3F51"   # blue    (steel #93ABBF, recalibrated 7:1)
+color5  = "#5B3137"   # magenta (CDE rose #B7878D, recalibrated 7:1)
+color6  = "#1C424D"   # cyan    (CDE dark teal #3E7C8D, recalibrated 7:1)
 color7  = "#000000"   # white   (ink — foreground)
-color8  = "#4A545E"   # br black  (muted)
-color9  = "#7B1216"   # br red
-color10 = "#24442F"   # br green
-color11 = "#4F3A0F"   # br yellow
-color12 = "#2A3F51"   # br blue
-color13 = "#5D3036"   # br magenta
-color14 = "#1B424D"   # br cyan
+color8  = "#373E46"   # br black  (muted, 7:1)
+color9  = "#5B0D10"   # br red
+color10 = "#1A3122"   # br green
+color11 = "#392A0B"   # br yellow
+color12 = "#1F2E3C"   # br blue
+color13 = "#432327"   # br magenta
+color14 = "#143038"   # br cyan
 color15 = "#000000"   # br white  (bright foreground)
