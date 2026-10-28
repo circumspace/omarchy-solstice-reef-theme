@@ -37,6 +37,7 @@ color14  br cyan  #143038
 color15  br white #000000
 
 # Regenerate wallpapers with:
-#   gen-cde-wallpapers --base canvas <this-repo>
-# (canvas, not chrome, so the desktop keeps the CDE default light-slate
-#  backdrop under the teal chrome — the authentic Default composition.)
+#   gen-cde-wallpapers <this-repo>
+# (default base = chrome #4992A7, the family convention — the Motif colorset
+#  lands on palette colors: ts #ADCED8 light_surface, bs #244953 deep teal,
+#  sel #3E7C8D dark_teal.)
