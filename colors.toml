@@ -41,26 +41,28 @@ orange               = "#B26A28"   # battery/low indicators; not yellow
 brown                = "#7D593B"
 
 # ── Hyprland borders ───────────────────────────────────────────────────────
-# Slot-exact CDE: salmon active frame, grey inactive frame.
+# Slot-exact CDE window frames: salmon active, teal chrome for everything
+# else — the screenshots' dominant menubar/window-chrome color.
 hyprland_active_border   = "#EDA870"
-hyprland_inactive_border = "#999999"
+hyprland_inactive_border = "#4992A7"
 
 # ── ANSI 16-color palette (canonical) ──────────────────────────────────────
-# Yellows/oranges are hue-preserved darkenings of the CDE salmon and amber,
-# meeting 4.5:1 (color1..color6, color9..color14) on the light-slate canvas.
+# Hue-preserved recalibrations of the CDE chrome/salmon/rose/steel family,
+# targeting ~5.5:1 (normals) and ~7:1 (brights) on the light-slate canvas —
+# comfortably above WCAG AA, so colored terminal text reads clearly.
 color0  = "#CAD1D9"   # black   (pinned to background/canvas by the resolver)
-color1  = "#A72A2F"   # red     (darkened from CDE icon red #CC3339)
-color2  = "#3B6248"   # green   (sage)
-color3  = "#6F5621"   # yellow  (darkened amber, hue preserved)
-color4  = "#435C72"   # blue    (darkened steel #93ABBF, hue preserved)
-color5  = "#7E4B52"   # magenta (darkened CDE rose #B7878D)
-color6  = "#30606E"   # cyan    (darkened CDE dark teal #3E7C8D)
+color1  = "#941E23"   # red     (CDE icon red #CC3339, recalibrated 5.5:1)
+color2  = "#31543D"   # green   (sage, 5.5:1)
+color3  = "#614919"   # yellow  (amber #C4983B, recalibrated 5.5:1)
+color4  = "#384F63"   # blue    (steel #93ABBF, recalibrated 5.5:1)
+color5  = "#6F3F45"   # magenta (CDE rose #B7878D, recalibrated 5.5:1)
+color6  = "#26525F"   # cyan    (CDE dark teal #3E7C8D, recalibrated 5.5:1)
 color7  = "#000000"   # white   (ink — foreground)
 color8  = "#4A545E"   # br black  (muted)
-color9  = "#A72A2F"   # br red
-color10 = "#3B6248"   # br green
-color11 = "#6F5621"   # br yellow
-color12 = "#3F5C76"   # br blue
-color13 = "#83464F"   # br magenta
-color14 = "#30606E"   # br cyan
+color9  = "#7B1216"   # br red
+color10 = "#24442F"   # br green
+color11 = "#4F3A0F"   # br yellow
+color12 = "#2A3F51"   # br blue
+color13 = "#5D3036"   # br magenta
+color14 = "#1B424D"   # br cyan
 color15 = "#000000"   # br white  (bright foreground)

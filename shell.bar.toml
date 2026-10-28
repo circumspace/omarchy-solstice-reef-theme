@@ -1,0 +1,10 @@
+# Bar — the CDE Front Panel: teal chrome, light text, salmon alerts.
+# Section override for omarchy's generated shell.toml (theme-shipped files
+# win over templates; only this section is replaced).
+background       = "#4992A7"
+background-alpha = 1.0
+text             = "#FFFFFF"
+active           = "#EDA870"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28

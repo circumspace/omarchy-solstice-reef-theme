@@ -23,13 +23,13 @@ return {
 				base05 = "#000000", -- fg (ink)
 				base06 = "#2E3A44",
 				base07 = "#4A545E",
-				base08 = "#A72A2F", -- red
-				base09 = "#B26A28", -- orange (salmon family)
-				base0A = "#6F5621", -- yellow (dark amber)
-				base0B = "#3B6248", -- green (strings, sage)
-				base0C = "#30606E", -- cyan (dark teal)
-				base0D = "#435C72", -- blue (functions, dark steel)
-				base0E = "#7E4B52", -- magenta (storage/cursor-word, dark rose)
+				base08 = "#941E23", -- red
+				base09 = "#8A4811", -- orange (salmon family, 4.5:1+)
+				base0A = "#614919", -- yellow (dark amber, 5.5:1)
+				base0B = "#31543D", -- green (strings, sage)
+				base0C = "#26525F", -- cyan (dark teal)
+				base0D = "#384F63", -- blue (functions, dark steel)
+				base0E = "#6F3F45", -- magenta (storage/cursor-word, dark rose)
 				base0F = "#7D593B", -- brown
 			},
 		},
