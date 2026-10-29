@@ -1,0 +1,17 @@
+# Launcher — the CDE application picker. Same tokens as the generated
+# [launcher] section, with selected-text fixed for contrast: the stock
+# template binds it to `accent` (salmon #EDA870), which is ~1.3:1 on the
+# light-slate card. The palette's dark teal #1C424D (CDE dark-teal hue,
+# recalibrated to 7:1 on the canvas) keeps the selection teal and legible.
+background                = "#CAD1D9"
+background-alpha          = 0.95
+text                      = "#000000"
+border                    = "hyprland.active-border-foreground"
+border-alpha              = 1.0
+scrim                     = "#CAD1D9"
+scrim-alpha               = 0.5
+selected-background       = "#000000"
+selected-background-alpha = 0.08
+selected-text             = "#1C424D"
+selected-border           = "hyprland.active-border-foreground"
+selected-border-alpha     = 0.25
