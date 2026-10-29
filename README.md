@@ -68,11 +68,12 @@ Full provenance in [`palette.txt`](palette.txt).
 
 ## Wallpapers
 
-Seven procedurally-generated backdrops in `backgrounds/` (6K), rendered at
+Eleven procedurally-generated backdrops in `backgrounds/` (6K), rendered at
 an 8× tile scale from [NsCDE](https://github.com/NsCDE/NsCDE) XPM patterns
 with the Motif colorset derived from this palette's chrome (`bg #4992A7`,
 `ts #ADCED8`, `bs #244953`, `sel #3E7C8D`): **Solyaris, Dune, Toronto,
-SandLight, CircuitBoards, Lattice, PinStripe**. Regenerate them with
+SandLight, CircuitBoards, Lattice, PinStripe, RicePaper, RakedSand, Wooly,
+Ankh**. Regenerate them with
 [circumspace/scripts `gen-cde-wallpapers`](https://github.com/circumspace/scripts).
 
 ## License
