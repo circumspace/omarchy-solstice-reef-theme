@@ -76,6 +76,8 @@ SandLight, CircuitBoards, Lattice, PinStripe, RicePaper, RakedSand, Wooly,
 Ankh**. Regenerate them with
 [circumspace/scripts `gen-cde-wallpapers`](https://github.com/circumspace/scripts).
 
+![Solstice Reef backgrounds](backgrounds.jpg)
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
